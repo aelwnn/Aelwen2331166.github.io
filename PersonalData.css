@@ -332,6 +332,9 @@ body.dark .btn-box a:hover::before {
 .home-sci a:hover{
     color: #dfd2dd;
 }
+body.dark .home-sci a:hover{
+    color: #18191a;
+}
 
 .home-sci a::before {
     content: '';
@@ -351,7 +354,7 @@ body.dark .home-sci a::before {
     left: 0;
     width: 0;
     height: 100%;
-    background: #18191a;
+    background: #a59578;
     z-index: -1;
     transition: 0.5s;
 }
