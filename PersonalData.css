@@ -152,6 +152,27 @@ body.dark .btn-box a:nth-child(2){
     color: rgba(255, 245, 251, 0.688);
 }
 
+body.dark .home-sci a:hover{
+    color: #18191a;
+}
+
+body.dark .home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(165, 149, 120);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+body.dark .home-sci a:hover::before {
+    width: 100%;
+}
+
+
 body.dark .home-sci {
     position: absolute;
     bottom: 40px;
@@ -332,9 +353,6 @@ body.dark .btn-box a:hover::before {
 .home-sci a:hover{
     color: #dfd2dd;
 }
-body.dark .home-sci a:hover{
-    color: #18191a;
-}
 
 .home-sci a::before {
     content: '';
@@ -347,23 +365,10 @@ body.dark .home-sci a:hover{
     z-index: -1;
     transition: 0.5s;
 }
-body.dark .home-sci a::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #a59578;
-    z-index: -1;
-    transition: 0.5s;
-}
 
 .home-sci a:hover::before {
     width: 100%;
-}
-body.dark .home-sci a:hover::before {
-    width: 100%;
+
 }
 
 .home-imgHover {
