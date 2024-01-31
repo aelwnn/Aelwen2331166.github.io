@@ -361,7 +361,9 @@ body.dark .home-sci a::before {
 
 .home-sci a:hover::before {
     width: 100%;
-
+}
+body.dark .home-sci a:hover::before {
+    width: 100%;
 }
 
 .home-imgHover {
