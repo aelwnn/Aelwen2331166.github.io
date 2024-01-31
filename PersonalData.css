@@ -1,0 +1,371 @@
+/* Import Google Font = Roboto_Mono */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+:root{
+    /* ===Warna=== */
+    --body-color: rgba(130, 82, 123, 0.253);
+    --sidebar-color: #ffffff;
+    --primary-color: rgb(110, 0, 93);
+    --primary-color-light: rgb(252, 245, 255);
+    --toggle-color: rgb(168, 168, 168);
+    --text-color: rgb(92, 92, 92);
+    --blog-color: rgb(108, 58, 101);
+
+    /* ===Transisi=== */
+    --trans-02: all 0.2s ease;
+    --trans-03: all 0.3s ease;
+    --trans-04: all 0.4s ease;
+    --trans-05: all 0.5s ease;
+}
+
+body.dark{
+    --body-color: #18191A;
+    --sidebar-color: #242526;
+    --primary-color: #3A3B3C;
+    --primary-color-light: rgb(77, 79, 80);
+    --toggle-color: #FFF;
+    --text-color: #CCC;
+    --arrow-color: rgb(255, 242, 254);
+}
+
+/* =====Text STYLE===== */
+.home .text{
+    font-size: 30px;
+    font-weight: 850;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.sidebar.close ~ .home{
+    left: 88px;
+    width: calc(100%-88px);
+}
+
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toggle-color);
+
+}
+
+body.dark .switch::before{
+    left: 25px;
+}
+/* ======DESIGN====== */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding: 20px 17%;
+    /* background: rgb(172, 194, 0); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6.5px;
+}
+
+.home .text{
+    margin-top: 7px;
+    color: rgb(92, 92, 92);
+}
+
+body.dark .home .text{
+    color: var(--text-color);
+}
+
+.navbar a{
+    font-size: 18px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, 
+.navbar .active{
+    color:  rgb(140, 0, 79);
+}
+
+body.dark .navbar a:hover, 
+.navbar .active{
+    color:  rgb(140, 0, 79);
+}
+
+/* ==========PAGE CONTENT========== */
+.page{
+    height: 100vh;
+    background: url('PNG/Aelwen.png') no-repeat;
+    background-size: 56% 950px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    margin-left: 8px;
+    margin-top: -75px;
+    transition: var(--trans-05);
+}
+
+.page-content{
+    max-width: 50%;
+}
+
+/* ==========Dark Mode========== */
+body.dark .page {
+    height: 100vh;
+    background: url('PNG/AelwenGray.png') no-repeat;
+    background-size: 56% 950px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    margin-left: 8px;
+    margin-top: -75px;
+}
+
+body.dark .page .page-content{
+    color: var(--text-color);
+}
+body.dark .page-content h3{
+    color: #740544;
+}
+body.dark .page-content h1{
+    color: rgb(165, 149, 120);
+}
+body.dark .btn-box a{
+    background: rgb(165, 149, 120);
+    border: 2px solid rgb(165, 149, 120);
+    color:var(--sidebar-color);
+}
+body.dark .btn-box a:nth-child(2){
+    background: transparent;
+    color: rgba(255, 245, 251, 0.688);
+}
+
+body.dark .home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+} 
+
+body.dark .home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(165, 149, 120);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(165, 149, 120);
+    text-decoration: none;
+} 
+
+/* =========Button STEAM AND HOYOLAB========= */
+body.dark .btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #a59578;
+    border: 2px solid #a59578;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #18191a;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+body.dark .btn-box a:hover {
+    color: #a59578;
+}
+
+body.dark .btn-box a:nth-child(2) {
+    background: transparent;
+    color: #a59578;
+}
+
+body.dark .btn-box a:nth-child(2):hover{
+    color: #18191a;
+}
+
+body.dark .btn-box a:nth-child(2)::before{
+    background: #a59578;
+}
+body.dark .btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #18191a;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+body.dark .btn-box a:hover::before {
+    width: 100%;
+}
+/* ========================================== */
+.page-content h1{
+    font-size: 56px;
+    font-weight: 700;
+    width: 100%;
+    color: rgb(68, 0, 47);
+}
+
+.page-content h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.page-content p {
+    margin: 20px 0 25px;
+    font-size: 16px;
+}
+
+.page-content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+/* =========Button STEAM AND HOYOLAB========= */
+.btn-box a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(68, 0, 47);
+    border: 2px solid rgb(68, 0, 47);
+    border-radius: 8px;
+    font-size: 19px;
+    color: #dfd2dd;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.btn-box a:hover {
+    color: rgb(68, 0, 47);
+}
+
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: rgb(68, 0, 47);
+}
+
+.btn-box a:nth-child(2):hover{
+    color: #dfd2dd;
+}
+
+.btn-box a:nth-child(2)::before{
+    background: rgb(68, 0, 47);
+}
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #dfd2dd;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home-sci {
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid rgb(68, 0, 47);
+    border-radius: 50%;
+    font-size: 20px;
+    color: rgb(68, 0, 47);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.home-sci a:hover{
+    color: #dfd2dd;
+}
+
+.home-sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(68, 0, 47);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.home-sci a:hover::before {
+    width: 100%;
+
+}
+
+.home-imgHover {
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    width: 755px;
+    height: 82%;
+    margin-top: 9.5%;
+    /* border: 2px solid red; */
+    transition: 1.5s;
+}
+
+.home-imgHover:hover {
+    background: #dfd2dd;
+    opacity: 0.5;
+}
+body.dark .home-imgHover:hover {
+    background: #18191A;
+    opacity: 0.7;
+}
