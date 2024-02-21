@@ -367,3 +367,8 @@ body.dark .navbar a:hover,
 .navbar .active{
     color:  rgb(140, 0, 79);
 }
+
+@media screen and (max-width: 600px)
+{
+    
+}

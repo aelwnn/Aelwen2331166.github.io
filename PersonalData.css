@@ -105,7 +105,7 @@ body.dark .navbar a:hover,
 /* ==========PAGE CONTENT========== */
 .page{
     height: 100vh;
-    background: url('PNG/Aelwen.png') no-repeat;
+    /* background: url('PNG/TransparentBGAelwen.png') no-repeat; */
     background-size: 56% 950px;
     background-position: right;
     display: flex;
@@ -120,10 +120,23 @@ body.dark .navbar a:hover,
     max-width: 50%;
 }
 
+section .page{
+    background: url('PNG/TransparentBGAelwen.png') no-repeat;
+    height: 100vh;
+    background-size: 56% 950px;
+    background-position: right;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    margin-left: 8px;
+    margin-top: -75px;
+}
+
+
 /* ==========Dark Mode========== */
 body.dark .page {
     height: 100vh;
-    background: url('PNG/AelwenGray.png') no-repeat;
+    /* background: url('PNG/AelwenGray.png') no-repeat; */
     background-size: 56% 950px;
     background-position: right;
     display: flex;
@@ -371,22 +384,27 @@ body.dark .btn-box a:hover::before {
 
 }
 
-.home-imgHover {
+/* .home-imgHover {
     position: absolute;
     top: 1px;
     right: -5px;
     width: 755px;
     height: 83.5%;
     margin-top: 9.5%;
-    /* border: 2px solid red; */
     transition: 1.5s;
-}
+} */
 
-.home-imgHover:hover {
+/* .home-imgHover:hover {
     background: #dfd2dd;
     opacity: 0.5;
-}
-body.dark .home-imgHover:hover {
+} */
+/* body.dark .home-imgHover:hover 
+{
     background: #18191A;
-    opacity: 0.7;
+    rotate: 10;
+} */
+
+@media screen and (max-width: 600px)
+{
+    
 }
