@@ -384,7 +384,7 @@ body.dark .btn-box a:hover::before {
 
 }
 
-/* .home-imgHover {
+.home-imgHover {
     position: absolute;
     top: 1px;
     right: -5px;
@@ -392,17 +392,17 @@ body.dark .btn-box a:hover::before {
     height: 83.5%;
     margin-top: 9.5%;
     transition: 1.5s;
-} */
+}
 
-/* .home-imgHover:hover {
+.home-imgHover:hover {
     background: #dfd2dd;
     opacity: 0.5;
-} */
-/* body.dark .home-imgHover:hover 
+}
+body.dark .home-imgHover:hover 
 {
     background: #18191A;
-    rotate: 10;
-} */
+    opacity: 0.5;
+}
 
 @media screen and (max-width: 600px)
 {

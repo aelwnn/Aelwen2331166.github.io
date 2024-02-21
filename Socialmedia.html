@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Side BAR --> 
             <!-- ===Stye CSS=== -->
         <link rel="stylesheet" href="Dashboard.css">
@@ -46,6 +47,12 @@
                             </a>
                         </li>
                         <li class="nav-link">
+                            <a href="album.html">
+                                <i class='bx bx-photo-album icon'></i>
+                                <span class="text nav-text">Album</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
                             <a href="Blog.html">
                                 <i class='bx bx-pencil icon' ></i>
                                 <span class="text nav-text">Blog</span>
@@ -83,12 +90,29 @@
                 </div>
             </div>
         </nav>
-        <!-- ===HOME PANEL=== -->
+         <!-- ======NAVIGATION BARL======-->
+    <body>
         <section class="home">
-            <div class="text">SocialMedia</div>
+            <div class="text">Social Media</div>
+            <div class="toggle-switch">
+                <span class="switch"></span>
+            </div>
         </section>
-            <script src="script.js"></script>
-
-        <!-- Content 1 end -->
+        <section class="personaldata">
+            <!-- <div class="text">Personal Data</div> -->
+            <header class="header">
+                <a class="logo">Aelwen.</a>
+                <nav class="navbar">
+                    <a href="#">Services</a>
+                    <a href="#">Portofolio</a>
+                    <a href="#">Contact</a>
+                    <a href="#">About</a>
+                    <a href="#" class="active">Login</a>
+                    <a class="login"></a>
+                </nav>
+            </header>
+        </section>
     </body>
-</html>
+        <script src="script.js"></script>
+
+ </html>
