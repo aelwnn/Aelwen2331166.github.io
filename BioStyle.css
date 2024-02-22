@@ -1,0 +1,130 @@
+/* Import Google Font = Roboto_Mono */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,400&display=swap');
+*{
+    font-family: 'Noto Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+* {margin: 0;padding: 0;}
+
+#page {
+    border-radius: 10px;
+    min-height: 150px;
+    height: 81.5%;
+    width: 60%;
+    min-width: 600px;
+    background: rgb(197, 187, 201);
+    margin: 50px auto;
+    padding: 30px;
+    color: #5b0030dc;
+}
+
+/* .photo-and-name {
+   
+} */
+
+.photo {
+    width: 15%;
+    min-width: 130px;
+    float: left;
+    margin-right: 20px;
+}
+
+.contact-info-box {
+    width: 70.9%;
+    display: inline-block;
+}
+
+.name {
+    margin-bottom: -5px;
+}
+.job-title {
+    display: inline-block;
+}
+
+.contact-details {
+    border-radius: 10px;
+    background: rgb(110, 0, 93);
+    color: rgb(232, 200, 224);
+    text-align: center;
+    margin: auto;
+    margin-top: 25px;
+    padding: 5px;
+    font-size: 15px;
+}
+
+/* #objective */
+
+#objective h3 {
+    border: 1px solid rgb(108, 58, 101);
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 30px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#objective p {
+    padding: 0 5px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #2e2e2e;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education h3 {
+    border: 1px solid rgb(108, 58, 101);
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 30px 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education table td {
+    padding: 5px;
+    font-size: 14px;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education table tr.school-1 td:first-child {
+    width: 120px;
+    color: rgb(252, 245, 255);
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#education table tr.school-2 td:first-child {
+    padding-bottom: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#bio-data h3 {
+    border: 1px solid rgb(108, 58, 101);
+    text-transform: uppercase;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 30px 0 10px;
+}
+
+#bio-data table td {
+    padding: 6px;
+    font-size: 15px;
+    color: #000;
+}
+
+#bio-data table tr td:first-child {
+    width: 200px;
+}
+
+#bio-data table tr td:nth-child(2) {
+    width: 300px;
+}
+
+#bio-data table tr td .data-1{
+    color: rgb(252, 245, 255);
+}
