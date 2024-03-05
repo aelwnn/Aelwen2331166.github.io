@@ -80,4 +80,26 @@
     background: rgba(130, 82, 123, 0.253);
     border: 15px solid rgb(68, 0, 47);
     border-radius: 15px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.35);
+}
+
+.home-img .rhombus img{
+    position: absolute;
+    top: 15px;
+    left: -250px;
+    max-width: 750px;
+    transform: rotate(-47deg);
+}
+
+.home .rhombus2 {
+    position: absolute;
+    top: -25%;
+    right: -40px;
+    width: 816px;
+    height: 816px;
+    background:rgb(68, 0, 47);
+    transform: rotate(-45deg);
+    z-index: -1;
+    border-radius: 15px;
+    box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.35);
 }
