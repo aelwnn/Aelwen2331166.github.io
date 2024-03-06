@@ -50,10 +50,10 @@ body.dark{
     padding: 8px 40px;
 }
 
-.sidebar.close ~ .home{
+/* .sidebar.close ~ .home{
     left: 88px;
     width: calc(100%-88px);
-}
+} */
 
 .toggle-switch .switch{
     position: relative;
