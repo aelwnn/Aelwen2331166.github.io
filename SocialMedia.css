@@ -89,3 +89,10 @@ a {
 .yt:hover {
     background:#FF0000;
 }
+
+/* Responsive */
+@media only screen and (min-width: 320px) and (max-width: 991px) {
+    .SocialMain {
+        flex-direction: column;
+    }
+}
